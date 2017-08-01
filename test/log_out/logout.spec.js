@@ -18,8 +18,8 @@ describe('Authorization page (log out)', () => {
         authorizationPage.passwordInput.sendKeys(welcombackdata.password);
         authorizationPage.loginButton.click();
         //browser.findElement(by.css('btn btn-s round filled dropdown-btn ng-isolate-scope')).click();
-        homepage.arrowButton.click();
-        $('.drop-button').click();
+        header.getArrow().click();
+       // $('.drop-button').click();
         //expect(authorizationPage.title.getText()).toBe(welcombackdata.autorizationPageTitle, 'incorrect page title');
     })
 })
