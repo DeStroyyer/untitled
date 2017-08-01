@@ -24,7 +24,7 @@ describe('Authorization page (N`ot registered user)', () => {
 
     it('', () => {
         authorizationPage.loginButton.click();
-        expect((header.getUserIncorrectEmailmessage.getText()).toBe(welcombackdata.incorrectLoginMessage))
+        expect(header.getUserIncorrectEmailmessage.getText).toBe(welcombackdata.incorrectLoginMessage);
 
     })
 
