@@ -6,5 +6,6 @@ module.exports={
     expectedPasswordFieldType: 'text',
     incorrectEmail: 's@gmail.com',
     incorrectPassword: '1234567',
-    incorrectLoginMessage:'Uh oh! Email or password is incorrect'
+    incorrectLoginMessage:'Uh oh! Email or password is incorrect',
+    NotEmailmessagetext: " Uh oh! This\n"+"<<br/>\nisn’t an email "
 }

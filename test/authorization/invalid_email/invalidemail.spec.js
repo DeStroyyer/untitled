@@ -3,7 +3,7 @@ const homepage = require(`${process.cwd()}/services/pages/homepage`);
 const authorizationPage = require(`${process.cwd()}/services/pages/authorizationPage`);
 const welcombackdata = require(`${process.cwd()}/data/welcombackdata`);
 
-describe('Authorization page (N`ot registered user)', () => {
+describe('Authorization page (Invalid email)', () => {
 
     beforeAll(() => browser.get(browser.baseUrl));
 
@@ -17,14 +17,14 @@ describe('Authorization page (N`ot registered user)', () => {
     //authorizationPage.login('ssls.automation+5@gmail.com', '123456');
     it('', () => {
         authorizationPage.emailInput.sendKeys(welcombackdata.incorrectEmail);
-        authorizationPage.passwordInput.sendKeys(welcombackdata.incorrectPassword);
+        authorizationPage.passwordInput.sendKeys(welcombackdata.password);
         authorizationPage.iconEye.click();
         expect(authorizationPage.getPasswordFieldType()).toBe(welcombackdata.expectedPasswordFieldType);
     })
 
     it('', () => {
 
-       // expect(header.getUserIncorrectEmailmessage.getAlertText()).toBe(welcombackdata.incorrectLoginMessage);
+       // expect(homepage.getNotEmailMessage().getText).toBe(welcombackdata.getNotEmailMessage());
 
     })
 
