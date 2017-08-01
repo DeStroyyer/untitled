@@ -20,8 +20,8 @@ describe('Authorization page (Welcome back!)', () => {
     })
 
     it('', () => {
-        authorizationPage.loginButton.click();
-        expect(homepage.getNotEmailMessage().getText()).toBe(welcombackdata.NotEmailmessagetext);
+     //   authorizationPage.loginButton.click();
+    //    expect(homepage.getNotEmailMessage().getText()).toBe(welcombackdata.NotEmailmessagetext);
 
     })
 
