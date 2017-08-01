@@ -3,5 +3,8 @@ module.exports={
     password: '123456',
     autorizationPageTitle: 'Authorization',
     homePageHeading: 'Buying SSL just got easier!',
-    expectedPasswordFieldType: 'text'
+    expectedPasswordFieldType: 'text',
+    incorrectEmail: 's@gmail.com',
+    incorrectPassword: '1234567',
+    incorrectLoginMessage:'Uh oh! Email or password is incorrect'
 }

@@ -17,6 +17,8 @@ class AutorizationPage {
     getPasswordFieldType(){
         return this.passwordInput.getAttribute('type')
     }
+
+
 }
 
 module.exports = new AutorizationPage();

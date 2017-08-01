@@ -6,6 +6,12 @@ class Header {
     getUserEmailButton(email){
         return element(by.cssContainingText('a', email))
     }
+
+    getUserIncorrectEmailmessage(){
+        return element(by.css('.noty_text'))
+    }
 }
 
 module.exports = new Header();
+
+

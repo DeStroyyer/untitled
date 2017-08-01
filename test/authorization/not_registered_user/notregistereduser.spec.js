@@ -1,13 +1,9 @@
-/**
- * Created by tvoloshenko on 7/17/17.
- */
 const header = require(`${process.cwd()}/services/pages/header`);
 const homepage = require(`${process.cwd()}/services/pages/homepage`);
 const authorizationPage = require(`${process.cwd()}/services/pages/authorizationPage`);
 const welcombackdata = require(`${process.cwd()}/data/welcombackdata`);
 
-
-describe('Authorization page (Welcome back!)', () => {
+describe('Authorization page (N`ot registered user)', () => {
 
     beforeAll(() => browser.get(browser.baseUrl));
 
@@ -20,16 +16,16 @@ describe('Authorization page (Welcome back!)', () => {
     })
     //authorizationPage.login('ssls.automation+5@gmail.com', '123456');
     it('', () => {
-        authorizationPage.emailInput.sendKeys(welcombackdata.email);
-        authorizationPage.passwordInput.sendKeys(welcombackdata.password);
+        authorizationPage.emailInput.sendKeys(welcombackdata.incorrectEmail);
+        authorizationPage.passwordInput.sendKeys(welcombackdata.incorrectPassword);
         authorizationPage.iconEye.click();
         expect(authorizationPage.getPasswordFieldType()).toBe(welcombackdata.expectedPasswordFieldType);
     })
 
     it('', () => {
         authorizationPage.loginButton.click();
+        expect((header.getUserIncorrectEmailmessage.getText()).toBe(welcombackdata.incorrectLoginMessage))
 
-        expect(header.getUserEmailButton(welcombackdata.email).isDisplayed()).toBeTruthy('user email button isn`t displayed');
     })
 
 })
