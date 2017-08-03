@@ -20,9 +20,7 @@ describe('Authorization page (N`ot registered user)', () => {
         authorizationPage.passwordInput.sendKeys(welcombackdata.incorrectPassword);
         authorizationPage.iconEye.click();
         expect(authorizationPage.getPasswordFieldType()).toBe(welcombackdata.expectedPasswordFieldType);
-    })
 
-    it('', () => {
 
        // expect(header.getUserIncorrectEmailmessage.getAlertText()).toBe(welcombackdata.incorrectLoginMessage);
 
