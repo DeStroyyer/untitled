@@ -7,7 +7,7 @@ class HomePage {
     }
 
     getNotEmailMessage(){
-        return element(by.css('.tooltip-text'))
+        return element(by.css('.tooltip-text')).isDisplayed()
     }
 
     // getArrowDropdown(){

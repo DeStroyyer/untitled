@@ -22,9 +22,16 @@ describe('Authorization page (Invalid email)', () => {
         expect(authorizationPage.getPasswordFieldType()).toBe(welcombackdata.expectedPasswordFieldType);
     })
 
-    it('', () => {
+    fit('', () => {
+        header.loginLink.click();
+        authorizationPage.emailInput.sendKeys(welcombackdata.notEmail);
+        authorizationPage.passwordInput.sendKeys(welcombackdata.password);
+        authorizationPage.iconEye.click();
+        //expect(authorizationPage.getPasswordFieldType()).toBe(welcombackdata.expectedPasswordFieldType);
 
-       // expect(homepage.getNotEmailMessage().getText).toBe(welcombackdata.getNotEmailMessage());
+        authorizationPage.loginButton.click();
+
+        expect(homepage.getNotEmailMessage().getText()).toBe(welcombackdata.NotEmailmessagetext);
 
     })
 

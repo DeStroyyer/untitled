@@ -5,7 +5,8 @@ module.exports={
     homePageHeading: 'Buying SSL just got easier!',
     expectedPasswordFieldType: 'text',
     incorrectEmail: 's@gmail.com',
+    notEmail: 'abc',
     incorrectPassword: '1234567',
     incorrectLoginMessage:'Uh oh! Email or password is incorrect',
-    NotEmailmessagetext: " Uh oh! This\n"+"<<br/>\nisn’t an email "
+    NotEmailmessagetext: 'Uh oh! This\nisn’t an email'
 }
